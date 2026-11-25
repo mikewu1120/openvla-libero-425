@@ -1,0 +1,98 @@
+{
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "source": {
+    "repo": "openvla/modified_libero_rlds",
+    "revision": "6ce6aaaaabdbe590b1eef5cd29c0d33f14a08551",
+    "files": [
+      {
+        "type": "file",
+        "oid": "bcb0f88588084c51e1a6d68bca3e3791030fa8fc",
+        "size": 930,
+        "path": "libero_spatial_no_noops/1.0.0/dataset_info.json"
+      },
+      {
+        "type": "file",
+        "oid": "a5c8abcf90cb16a51b2e7900f4bdbdafa0566816",
+        "size": 9195,
+        "path": "libero_spatial_no_noops/1.0.0/features.json"
+      },
+      {
+        "type": "file",
+        "oid": "620519c7bf5e0e21888f3d8d54ad498c039db35c",
+        "size": 118202941,
+        "lfs": {
+          "oid": "6d6360559a4b71df3bcabd9b55a75451f04375449ca5267616cbc1c21528eac5",
+          "size": 118202941,
+          "pointerSize": 134
+        },
+        "xetHash": "4d0782d19f05579143fc8845093c654f7b985556ad7a0609a2011258b047b5c2",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00000-of-00016"
+      },
+      {
+        "type": "file",
+        "oid": "837b254895b0999e545167ae0241a69bd6e43890",
+        "size": 117638784,
+        "lfs": {
+          "oid": "9b0c706e9796304dbc40be5f0ccf6a407a471cd3aecbecfc3baab2af26a2a631",
+          "size": 117638784,
+          "pointerSize": 134
+        },
+        "xetHash": "ef8139b57e0dcaf67872264f5ce5e7b110a8e9c18321497d36d3ebf61cd3a085",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00001-of-00016"
+      }
+    ]
+  },
+  "preprocessing": "upright RLDS JPEG -> Lanczos3 224 -> center crop area 0.9",
+  "validation_scope": "Held out only from this local update; base checkpoint was already trained on LIBERO-Spatial.",
+  "episodes": [
+    {
+      "file": "train_episode_00.npz",
+      "split": "train",
+      "steps": 84,
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:11",
+      "record_sha256": "4ab1aa44c14ead6a5a49ecadbf2b7ecd3a533da820a74ac6d121b35e018198ee"
+    },
+    {
+      "file": "train_episode_01.npz",
+      "split": "train",
+      "steps": 85,
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:12",
+      "record_sha256": "eb1b178339f83d787e5b3f054417a39a81f278cc866fa7800d80ce949103f179"
+    },
+    {
+      "file": "train_episode_02.npz",
+      "split": "train",
+      "steps": 128,
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:14",
+      "record_sha256": "4691e7c2152f7aa8d1bb16677467757a6660039627a71b24d007d9e13029152f"
+    },
+    {
+      "file": "train_episode_03.npz",
+      "split": "train",
+      "steps": 127,
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:16",
+      "record_sha256": "f022a24417625ff09338585ec212ec455ac45f297028915c1134c6bb13b1cb7b"
+    },
+    {
+      "file": "train_episode_04.npz",
+      "split": "train",
+      "steps": 134,
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:26",
+      "record_sha256": "863562efe634899e8f0861d0be447e83458dce581f3d74d09f6e11d4638750d8"
+    },
+    {
+      "file": "validation_episode_05.npz",
+      "split": "validation",
+      "steps": 84,
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:5",
+      "record_sha256": "ede081f65a9e086287d829cc19fda9b264702a7739156e55c16eb73753306fe8"
+    },
+    {
+      "file": "validation_episode_06.npz",
+      "split": "validation",
+      "steps": 96,
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:20",
+      "record_sha256": "c4a7cb95a2e8e491152f2be254c6b43af9bc0fa7cc9b324993517bfa0a56fd2e"
+    }
+  ]
+}

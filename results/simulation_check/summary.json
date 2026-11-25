@@ -1,0 +1,20 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 0,
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "seed": 7,
+  "sim_only": true,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "step_limit": 10,
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 10,
+      "success": false,
+      "mean_inference_seconds": null,
+      "video": "results\\simulation_check\\episode_0.mp4"
+    }
+  ],
+  "full_paper_benchmark": false
+}

@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "base": "C:\\Users\\15147\\Desktop\\425\\models\\openvla-7b-finetuned-libero-spatial",
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "seed": 7,
+  "rank": 8,
+  "lora_alpha": 16,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.0001,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "gradient_checkpointing": true,
+  "batch_size": 1,
+  "accumulation": 4,
+  "planned_updates": 50,
+  "trainable_parameters": 4194304,
+  "dataset_frames": {
+    "train": 558,
+    "validation": 180
+  },
+  "validation_scope": "Held out only from this local update; base checkpoint was already trained on LIBERO-Spatial.",
+  "before": {
+    "train": {
+      "loss": 0.11673149201681099,
+      "action_token_accuracy": 0.9583333333333334,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.10777089294227456,
+      "action_token_accuracy": 0.9642857142857143,
+      "frames": 24
+    }
+  },
+  "completed_updates": 50,
+  "after": {
+    "train": {
+      "loss": 0.08053847973500676,
+      "action_token_accuracy": 0.9761904761904762,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.09654205826594382,
+      "action_token_accuracy": 0.9642857142857143,
+      "frames": 24
+    }
+  },
+  "adapter_weight_l1_change": 2694.226495742798,
+  "elapsed_seconds": 257.329295500007,
+  "peak_allocated_gib": 5.5134992599487305,
+  "peak_reserved_gib": 5.732421875
+}

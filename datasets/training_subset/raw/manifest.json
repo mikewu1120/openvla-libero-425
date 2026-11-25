@@ -1,0 +1,42 @@
+{
+  "repo": "openvla/modified_libero_rlds",
+  "revision": "6ce6aaaaabdbe590b1eef5cd29c0d33f14a08551",
+  "files": [
+    {
+      "type": "file",
+      "oid": "bcb0f88588084c51e1a6d68bca3e3791030fa8fc",
+      "size": 930,
+      "path": "libero_spatial_no_noops/1.0.0/dataset_info.json"
+    },
+    {
+      "type": "file",
+      "oid": "a5c8abcf90cb16a51b2e7900f4bdbdafa0566816",
+      "size": 9195,
+      "path": "libero_spatial_no_noops/1.0.0/features.json"
+    },
+    {
+      "type": "file",
+      "oid": "620519c7bf5e0e21888f3d8d54ad498c039db35c",
+      "size": 118202941,
+      "lfs": {
+        "oid": "6d6360559a4b71df3bcabd9b55a75451f04375449ca5267616cbc1c21528eac5",
+        "size": 118202941,
+        "pointerSize": 134
+      },
+      "xetHash": "4d0782d19f05579143fc8845093c654f7b985556ad7a0609a2011258b047b5c2",
+      "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00000-of-00016"
+    },
+    {
+      "type": "file",
+      "oid": "837b254895b0999e545167ae0241a69bd6e43890",
+      "size": 117638784,
+      "lfs": {
+        "oid": "9b0c706e9796304dbc40be5f0ccf6a407a471cd3aecbecfc3baab2af26a2a631",
+        "size": 117638784,
+        "pointerSize": 134
+      },
+      "xetHash": "ef8139b57e0dcaf67872264f5ce5e7b110a8e9c18321497d36d3ebf61cd3a085",
+      "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00001-of-00016"
+    }
+  ]
+}

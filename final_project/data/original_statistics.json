@@ -1,0 +1,174 @@
+{
+  "success_rates": [
+    [
+      0.7333333333333333,
+      0.5,
+      0.6
+    ],
+    [
+      0.8,
+      0.6333333333333333,
+      0.6
+    ]
+  ],
+  "success_ci95": [
+    [
+      [
+        0.5666666666666667,
+        0.3333333333333333,
+        0.43333333333333335
+      ],
+      [
+        0.6666666666666666,
+        0.4666666666666667,
+        0.4666666666666667
+      ]
+    ],
+    [
+      [
+        0.8666666666666667,
+        0.6666666666666666,
+        0.7666666666666667
+      ],
+      [
+        0.9333333333333333,
+        0.8,
+        0.7333333333333333
+      ]
+    ]
+  ],
+  "robustness_gap": [
+    0.18333333333333324,
+    0.18333333333333335
+  ],
+  "gap_ci95": [
+    [
+      0.033333333333333326,
+      0.06666666666666676
+    ],
+    [
+      0.33333333333333337,
+      0.30000000000000004
+    ]
+  ],
+  "gap_change_qlora_minus_base": 1.1102230246251565e-16,
+  "gap_change_ci95": [
+    -0.15000000000000002,
+    0.16666666666666663
+  ],
+  "ci_method": "5000 paired bootstrap resamples of initial-state indices within each fixed task; seed 7. Conditional on these tasks and one training seed.",
+  "paired_counts": {
+    "base": {
+      "original_success_paraphrase_failure": 16,
+      "original_failure_paraphrase_success": 5,
+      "paired_comparisons": 60
+    },
+    "qlora": {
+      "original_success_paraphrase_failure": 12,
+      "original_failure_paraphrase_success": 1,
+      "paired_comparisons": 60
+    }
+  },
+  "total_rollouts": 180,
+  "per_task_success_counts": [
+    [
+      [
+        8,
+        7,
+        8
+      ],
+      [
+        7,
+        3,
+        3
+      ],
+      [
+        7,
+        5,
+        7
+      ]
+    ],
+    [
+      [
+        10,
+        8,
+        10
+      ],
+      [
+        8,
+        5,
+        5
+      ],
+      [
+        6,
+        6,
+        3
+      ]
+    ]
+  ],
+  "selected_video_pairs": [
+    {
+      "task_id": 0,
+      "state": 0,
+      "variant": "paraphrase_1",
+      "base_original": 1,
+      "base_paraphrase": 0,
+      "qlora_original": 1,
+      "qlora_paraphrase": 0,
+      "discordance": 2,
+      "directories": [
+        "rollouts/base_task0_state00_original",
+        "rollouts/base_task0_state00_paraphrase_1",
+        "rollouts/qlora_task0_state00_original",
+        "rollouts/qlora_task0_state00_paraphrase_1"
+      ],
+      "selection_rule": "Maximum observed discordance within task, then lowest initial-state index and variant name; illustrative, not representative frequency."
+    },
+    {
+      "task_id": 1,
+      "state": 9,
+      "variant": "paraphrase_2",
+      "base_original": 0,
+      "base_paraphrase": 1,
+      "qlora_original": 1,
+      "qlora_paraphrase": 0,
+      "discordance": 3,
+      "directories": [
+        "rollouts/base_task1_state09_original",
+        "rollouts/base_task1_state09_paraphrase_2",
+        "rollouts/qlora_task1_state09_original",
+        "rollouts/qlora_task1_state09_paraphrase_2"
+      ],
+      "selection_rule": "Maximum observed discordance within task, then lowest initial-state index and variant name; illustrative, not representative frequency."
+    },
+    {
+      "task_id": 2,
+      "state": 0,
+      "variant": "paraphrase_2",
+      "base_original": 0,
+      "base_paraphrase": 1,
+      "qlora_original": 0,
+      "qlora_paraphrase": 0,
+      "discordance": 2,
+      "directories": [
+        "rollouts/base_task2_state00_original",
+        "rollouts/base_task2_state00_paraphrase_2",
+        "rollouts/qlora_task2_state00_original",
+        "rollouts/qlora_task2_state00_paraphrase_2"
+      ],
+      "selection_rule": "Maximum observed discordance within task, then lowest initial-state index and variant name; illustrative, not representative frequency."
+    }
+  ],
+  "hypotheses": {
+    "H1": "Equivalent paraphrases may change closed-loop success despite preserving task semantics.",
+    "H2": "Original-instruction-only QLoRA may improve, preserve, or reduce paraphrase robustness; direction is not assumed.",
+    "H3": "Offline imitation loss changes need not imply improved closed-loop success."
+  },
+  "limitations": [
+    "One training seed, three related tasks and two hand-authored paraphrases: exploratory study, not a broad benchmark.",
+    "The official base checkpoint was already fine-tuned on LIBERO-Spatial; held-out local episodes are not claimed unseen to the base.",
+    "All failures and all 180 outcomes are retained; execution errors are not scored as task failures.",
+    "Instruction variants, task IDs and initial states are fixed before inspecting evaluation outcomes.",
+    "Same-initial-state outcomes are paired and not independent across paraphrases."
+  ]
+}

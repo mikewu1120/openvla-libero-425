@@ -1,0 +1,23 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 0,
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "seed": 7,
+  "sim_only": false,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "step_limit": 220,
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 76,
+      "success": true,
+      "mean_inference_seconds": 0.41956750262952963,
+      "video": "C:\\Users\\15147\\Desktop\\425\\results\\libero_spatial_task0\\episode_0.mp4"
+    }
+  ],
+  "full_paper_benchmark": false,
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "peak_torch_allocated_gib": 4.729206085205078,
+  "peak_torch_reserved_gib": 4.857421875
+}

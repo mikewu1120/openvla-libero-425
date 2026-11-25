@@ -1,0 +1,34 @@
+{
+  "source_commits": {
+    "openvla": "c8f03f48af692657d3060c19588038c7220e9af9",
+    "LIBERO": "8f1084e3132a39270c3a13ebe37270a43ece2a01"
+  },
+  "sha256": {
+    "language_experiment/protocol.json": "dd96a411756e0eb9fb32eaac1603b1a80417b35592213c53ec308a0252131dea",
+    "datasets/language_experiment/manifest.json": "e2981173fecfeb65aff1ae6c20544a44429ead4c79c493477a6bbf30dae12d69",
+    "requirements-windows.lock.txt": "251486b74155f958100e059ac2c8fcc4d9856f37b7e773e414c5009c3b610c5b",
+    "train_qlora_4080.py": "22eea862d123b860d579f2e44f4e51ddc2345b3c42447ad7bfdc80a89fb7fdbd",
+    "run_libero_4080.py": "62846a499f5c779dfac7dca1f4d744095a65add1526a6e91c40b52c37b1113c8",
+    "language_experiment/evaluate.py": "c31e2d39d52dfb4d7722112ab80a3f6021ab922e08847a03cea43eba849b9cb6",
+    "language_experiment/summarize.py": "aba841fb1c39e13028674545a171c262f7209af056544f4c91fcc4ae3e1e40fc",
+    "language_experiment/make_comparisons.py": "0218af53b0d65f4623a52d8eb3ac4571f58550b6ed691a4b9eb3effa0e2a6d26",
+    "language_experiment/finish_run.py": "16a72873ca3137d695ec4296f95d83dfac005455aa7e68423dd0457b9d0ae839",
+    "language_experiment/validate_outputs.py": "19e9ae6f6ca9f9ee5dcf920c33d96669e21b10ffb0b167a59bbf7991013187bf"
+  },
+  "base_model_revision": "962318cec55ac10993ff0f5f43eda9a270b4c873",
+  "data_revision": "6ce6aaaaabdbe590b1eef5cd29c0d33f14a08551",
+  "runtime_recovery": {
+    "completed_cells_preserved": 11,
+    "batch_cells": 5,
+    "reason": "Repeated native MuJoCo model loads exhausted file resources; resets reproduced error on an existing OBJ file.",
+    "libero_wrapper_sha256": "9e77ac58c2bbc02b343e55c42d5f050919cf4846eceaecec7e8897737e9efc8b",
+    "change": "Removed finally/continue that swallowed reset exceptions; successful reset path unchanged.",
+    "upstream_issue": "https://github.com/google-deepmind/mujoco/issues/1685",
+    "diagnostic_tool": "py-spy 0.4.3"
+  },
+  "completed_outputs": {
+    "validation": "validation.json",
+    "total_rollouts": 180,
+    "videos": 183
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "base": "C:\\Users\\15147\\Desktop\\425\\models\\openvla-7b-finetuned-libero-spatial",
+  "task": "three LIBERO-Spatial tasks",
+  "seed": 7,
+  "rank": 8,
+  "lora_alpha": 16,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.0001,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "gradient_checkpointing": true,
+  "batch_size": 1,
+  "accumulation": 4,
+  "planned_updates": 300,
+  "trainable_parameters": 4194304,
+  "dataset_frames": {
+    "train": 3467,
+    "validation": 803
+  },
+  "data_directory": "datasets\\language_experiment",
+  "sampling": "round-robin tasks, randomized frames within task",
+  "validation_scope": "Held out from this update only; official base already saw LIBERO-Spatial.",
+  "before": {
+    "train": {
+      "loss": 0.05544500103739362,
+      "action_token_accuracy": 0.9821428571428571,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.16615372183878208,
+      "action_token_accuracy": 0.9464285714285714,
+      "frames": 24
+    }
+  },
+  "completed_updates": 300,
+  "sampled_frames_per_task": {
+    "0": 400,
+    "1": 400,
+    "2": 400
+  },
+  "after": {
+    "train": {
+      "loss": 0.01127602459867679,
+      "action_token_accuracy": 1.0,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.10853573985756763,
+      "action_token_accuracy": 0.9583333333333334,
+      "frames": 24
+    }
+  },
+  "adapter_weight_l1_change": 6586.055606842041,
+  "elapsed_seconds": 1126.9622814000031,
+  "peak_allocated_gib": 5.5134992599487305,
+  "peak_reserved_gib": 5.732421875
+}

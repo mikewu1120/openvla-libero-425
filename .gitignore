@@ -1,0 +1,24 @@
+# Python virtual environment & caches
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+.libero/
+tmp/
+
+# Base 7B model weights (~14 GB; download via download_model.py)
+models/
+
+# Raw RLDS TFRecord shards (>100 MB per file; metadata preserved in manifest.json)
+datasets/training_subset/raw/*.tfrecord-*
+datasets/training_subset/raw/*.partial
+*.partial
+
+# Intermediate slide/report build artifacts & local chart snapshots
+.build_final/
+.chart-data-*/
+
+# OS files
+.DS_Store
+._*
+Thumbs.db

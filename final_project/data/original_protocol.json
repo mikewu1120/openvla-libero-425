@@ -1,0 +1,70 @@
+{
+  "experiment": "OpenVLA language robustness on RTX 4080 Laptop 12GB",
+  "status": "protocol_fixed_before_evaluation",
+  "suite": "libero_spatial",
+  "tasks": [
+    {
+      "id": 0,
+      "label": "between",
+      "original": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "paraphrase_1": "place the black bowl located between the plate and the ramekin onto the plate",
+      "paraphrase_2": "find the black bowl between the plate and the ramekin, then move it onto the plate"
+    },
+    {
+      "id": 1,
+      "label": "next_to",
+      "original": "pick up the black bowl next to the ramekin and place it on the plate",
+      "paraphrase_1": "place the black bowl located next to the ramekin onto the plate",
+      "paraphrase_2": "find the black bowl next to the ramekin, then move it onto the plate"
+    },
+    {
+      "id": 2,
+      "label": "center",
+      "original": "pick up the black bowl from table center and place it on the plate",
+      "paraphrase_1": "place the black bowl located at the center of the table onto the plate",
+      "paraphrase_2": "find the black bowl at the center of the table, then move it onto the plate"
+    }
+  ],
+  "models": ["base", "qlora"],
+  "variants": ["original", "paraphrase_1", "paraphrase_2"],
+  "initial_state_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "max_action_steps": 220,
+  "settle_steps": 10,
+  "model_seed": 7,
+  "environment_seed": 0,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "policy_observation_resolution": 256,
+  "model_input_resolution": 224,
+  "video_resolution": 720,
+  "video_fps": 20,
+  "video_timebase": "simulation time, not real inference time",
+  "expected_rollouts": 180,
+  "training": {
+    "updates": 300,
+    "batch_size": 1,
+    "gradient_accumulation": 4,
+    "learning_rate": 0.0001,
+    "rank": 8,
+    "lora_alpha": 16,
+    "targets": ["q_proj", "v_proj"],
+    "sampling": "round-robin tasks, random frames without replacement within each task cycle",
+    "train_episodes_per_task": 10,
+    "validation_episodes_per_task": 2,
+    "instructions": "original only",
+    "checkpoint_selection": "last update, fixed before test"
+  },
+  "primary_metrics": ["success_rate", "original_minus_mean_paraphrase_success", "paired_original_success_paraphrase_failure"],
+  "hypotheses": {
+    "H1": "Equivalent paraphrases may change closed-loop success despite preserving task semantics.",
+    "H2": "Original-instruction-only QLoRA may improve, preserve, or reduce paraphrase robustness; direction is not assumed.",
+    "H3": "Offline imitation loss changes need not imply improved closed-loop success."
+  },
+  "limits": [
+    "One training seed, three related tasks and two hand-authored paraphrases: exploratory study, not a broad benchmark.",
+    "The official base checkpoint was already fine-tuned on LIBERO-Spatial; held-out local episodes are not claimed unseen to the base.",
+    "All failures and all 180 outcomes are retained; execution errors are not scored as task failures.",
+    "Instruction variants, task IDs and initial states are fixed before inspecting evaluation outcomes.",
+    "Same-initial-state outcomes are paired and not independent across paraphrases."
+  ]
+}

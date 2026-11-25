@@ -1,0 +1,24 @@
+{
+  "suite": "libero_spatial",
+  "task_id": 0,
+  "task": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+  "seed": 7,
+  "sim_only": false,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "step_limit": 220,
+  "episodes": [
+    {
+      "episode": 0,
+      "steps": 78,
+      "success": true,
+      "mean_inference_seconds": 0.48537616794839356,
+      "video": "results\\qlora_task0\\episode_0.mp4"
+    }
+  ],
+  "full_paper_benchmark": false,
+  "adapter": "training_runs\\qlora_task0\\adapter",
+  "gpu": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "peak_torch_allocated_gib": 4.744663238525391,
+  "peak_torch_reserved_gib": 4.884765625
+}

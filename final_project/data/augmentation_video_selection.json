@@ -1,0 +1,28 @@
+[
+  {
+    "task_id": 2,
+    "state": 0,
+    "variant": "paraphrase_2",
+    "selection": "Maximum paired gain, earliest task/state/variant among ties",
+    "scope": "Selected after results for illustration; not a frequency estimate",
+    "directories": [
+      "language_experiment/rollouts/qlora_task2_state00_original",
+      "language_experiment/rollouts/qlora_task2_state00_paraphrase_2",
+      "improvement/rollouts/qlora_task2_state00_original",
+      "improvement/rollouts/qlora_task2_state00_paraphrase_2"
+    ]
+  },
+  {
+    "task_id": 0,
+    "state": 1,
+    "variant": "paraphrase_2",
+    "selection": "Maximum paired loss, earliest task/state/variant among ties",
+    "scope": "Selected after results for illustration; not a frequency estimate",
+    "directories": [
+      "language_experiment/rollouts/qlora_task0_state01_original",
+      "language_experiment/rollouts/qlora_task0_state01_paraphrase_2",
+      "improvement/rollouts/qlora_task0_state01_original",
+      "improvement/rollouts/qlora_task0_state01_paraphrase_2"
+    ]
+  }
+]

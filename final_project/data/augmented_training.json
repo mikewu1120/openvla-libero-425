@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "base": "C:\\Users\\15147\\Desktop\\425\\models\\openvla-7b-finetuned-libero-spatial",
+  "task": "three LIBERO-Spatial tasks",
+  "seed": 7,
+  "rank": 8,
+  "lora_alpha": 16,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.0001,
+  "quantization": "NF4",
+  "attention": "sdpa",
+  "gradient_checkpointing": true,
+  "batch_size": 1,
+  "accumulation": 4,
+  "planned_updates": 300,
+  "trainable_parameters": 4194304,
+  "dataset_frames": {
+    "train": 3467,
+    "validation": 803
+  },
+  "data_directory": "C:\\Users\\15147\\Desktop\\425\\datasets\\language_experiment",
+  "sampling": "round-robin tasks, randomized frames within task",
+  "validation_scope": "Held out from this update only; official base already saw LIBERO-Spatial.",
+  "before": {
+    "train": {
+      "loss": 0.05544500103739362,
+      "action_token_accuracy": 0.9821428571428571,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.16615372183878208,
+      "action_token_accuracy": 0.9464285714285714,
+      "frames": 24
+    }
+  },
+  "completed_updates": 300,
+  "sampled_frames_per_task": {
+    "0": 400,
+    "1": 400,
+    "2": 400
+  },
+  "after": {
+    "train": {
+      "loss": 0.06865125662685993,
+      "action_token_accuracy": 0.9761904761904762,
+      "frames": 24
+    },
+    "validation": {
+      "loss": 0.06836156223531968,
+      "action_token_accuracy": 0.9702380952380952,
+      "frames": 24
+    }
+  },
+  "adapter_weight_l1_change": 7761.842205047607,
+  "elapsed_seconds": 1121.6947054000339,
+  "peak_allocated_gib": 5.514481067657471,
+  "peak_reserved_gib": 5.732421875,
+  "language_augmentation": {
+    "instructions": {
+      "0": [
+        "pick up the black bowl between the plate and the ramekin and place it on the plate",
+        "grasp the black bowl between the plate and the ramekin and set it on the plate",
+        "move the black bowl between the plate and the ramekin to the plate by picking it up"
+      ],
+      "1": [
+        "pick up the black bowl next to the ramekin and place it on the plate",
+        "grasp the black bowl next to the ramekin and set it on the plate",
+        "move the black bowl next to the ramekin to the plate by picking it up"
+      ],
+      "2": [
+        "pick up the black bowl from table center and place it on the plate",
+        "grasp the black bowl in the middle of the table and set it on the plate",
+        "move the black bowl in the middle of the table to the plate by picking it up"
+      ]
+    },
+    "sample_counts": {
+      "0": [
+        134,
+        133,
+        133
+      ],
+      "1": [
+        134,
+        133,
+        133
+      ],
+      "2": [
+        134,
+        133,
+        133
+      ]
+    },
+    "test_instruction_strings_used_in_training": false,
+    "exploratory_after_first_experiment": true
+  }
+}

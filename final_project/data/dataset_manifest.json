@@ -1,0 +1,419 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "label": "between",
+      "original": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "paraphrase_1": "place the black bowl located between the plate and the ramekin onto the plate",
+      "paraphrase_2": "find the black bowl between the plate and the ramekin, then move it onto the plate"
+    },
+    {
+      "id": 1,
+      "label": "next_to",
+      "original": "pick up the black bowl next to the ramekin and place it on the plate",
+      "paraphrase_1": "place the black bowl located next to the ramekin onto the plate",
+      "paraphrase_2": "find the black bowl next to the ramekin, then move it onto the plate"
+    },
+    {
+      "id": 2,
+      "label": "center",
+      "original": "pick up the black bowl from table center and place it on the plate",
+      "paraphrase_1": "place the black bowl located at the center of the table onto the plate",
+      "paraphrase_2": "find the black bowl at the center of the table, then move it onto the plate"
+    }
+  ],
+  "task": "three LIBERO-Spatial tasks",
+  "episodes": [
+    {
+      "file": "task0_train_00.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 84,
+      "record_sha256": "4ab1aa44c14ead6a5a49ecadbf2b7ecd3a533da820a74ac6d121b35e018198ee",
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:11"
+    },
+    {
+      "file": "task0_train_01.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 85,
+      "record_sha256": "eb1b178339f83d787e5b3f054417a39a81f278cc866fa7800d80ce949103f179",
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:12"
+    },
+    {
+      "file": "task0_train_02.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 128,
+      "record_sha256": "4691e7c2152f7aa8d1bb16677467757a6660039627a71b24d007d9e13029152f",
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:14"
+    },
+    {
+      "file": "task0_train_03.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 127,
+      "record_sha256": "f022a24417625ff09338585ec212ec455ac45f297028915c1134c6bb13b1cb7b",
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:16"
+    },
+    {
+      "file": "task0_train_04.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 134,
+      "record_sha256": "863562efe634899e8f0861d0be447e83458dce581f3d74d09f6e11d4638750d8",
+      "source_record": "libero_spatial-train.tfrecord-00000-of-00016:26"
+    },
+    {
+      "file": "task1_train_00.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 112,
+      "record_sha256": "3bfb7e24afc3ef9ec87fc1d133328edca92236d33d47a10c09df7c0a4bccd516",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:4"
+    },
+    {
+      "file": "task0_train_05.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 84,
+      "record_sha256": "ede081f65a9e086287d829cc19fda9b264702a7739156e55c16eb73753306fe8",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:5"
+    },
+    {
+      "file": "task2_train_00.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 135,
+      "record_sha256": "0102f6bd80653fc713e77a9e06e03f26b0ac91f65d2061420e9e052555fed1b2",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:6"
+    },
+    {
+      "file": "task1_train_01.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 132,
+      "record_sha256": "ffde2e7c47328784963b8eb1dfd64d45ba4b5a42b7c5418ba07a9739bf09ec5a",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:9"
+    },
+    {
+      "file": "task2_train_01.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 100,
+      "record_sha256": "42056be6e7fc42f5f2a907b75240a8fcd72e3fdd790ab96103cf089dc0f0f9ae",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:10"
+    },
+    {
+      "file": "task2_train_02.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 120,
+      "record_sha256": "e322b6d7e27290687092afe4aaceb6fc2183239ba569582f316144da5d7bc57d",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:12"
+    },
+    {
+      "file": "task1_train_02.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 111,
+      "record_sha256": "bf23ac73cbc5b51257f3860ea5924fc93344f38d758c117eba404b9e189e5072",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:17"
+    },
+    {
+      "file": "task0_train_06.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 96,
+      "record_sha256": "c4a7cb95a2e8e491152f2be254c6b43af9bc0fa7cc9b324993517bfa0a56fd2e",
+      "source_record": "libero_spatial-train.tfrecord-00001-of-00016:20"
+    },
+    {
+      "file": "task1_train_03.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 120,
+      "record_sha256": "45dd33f7c25342c4669bd83e0abb77a6a4b9eeaddd770f0ddddfe4ea0e6d8f9f",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:1"
+    },
+    {
+      "file": "task1_train_04.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 116,
+      "record_sha256": "9b2b11b15aff70f4867af9399b874608530a5338ebe7125ef284695e83d77873",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:4"
+    },
+    {
+      "file": "task2_train_03.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 121,
+      "record_sha256": "caae9a528583c09114b932d7859037958fe96d18fed27ae1fe37946d77fee1eb",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:6"
+    },
+    {
+      "file": "task0_train_07.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 102,
+      "record_sha256": "3cf304090297c12881246aa2282a21bb8984688fbf9d00260aff180e09de7e83",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:7"
+    },
+    {
+      "file": "task1_train_05.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 143,
+      "record_sha256": "75c4f298f276307330f52ec4b0db211d803cacae292a7df130f735ad64ca27d5",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:12"
+    },
+    {
+      "file": "task1_train_06.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 143,
+      "record_sha256": "07b1dc4133b26261a2edec9f475d20f0c07b84c93d989ab6c858c15d25452274",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:18"
+    },
+    {
+      "file": "task2_train_04.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 106,
+      "record_sha256": "a9e026591650e8afd79e494025b66f14ab5fe0327d79c2046b4f1bd4f6ccdb10",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:22"
+    },
+    {
+      "file": "task2_train_05.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 125,
+      "record_sha256": "ddcf887a0f372380e852a73417abab2658759924b502aa5c7c12cfdb8f16382d",
+      "source_record": "libero_spatial-train.tfrecord-00002-of-00016:26"
+    },
+    {
+      "file": "task2_train_06.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 111,
+      "record_sha256": "56754fbbc5da0218f643648949e5eb2ec60679d6a6f5c92122177cddf3d4c5f5",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:1"
+    },
+    {
+      "file": "task2_train_07.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 106,
+      "record_sha256": "a84503afcc80f819f7ea00ad265c8e530466b745b7777899d55871775d87cf4e",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:6"
+    },
+    {
+      "file": "task2_train_08.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 103,
+      "record_sha256": "bc207d8e776389b679732585ffd07fd9ae26c18b660448125b7de56cf11fd46c",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:7"
+    },
+    {
+      "file": "task2_train_09.npz",
+      "split": "train",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 114,
+      "record_sha256": "695bbd7ff523bd420d0ef6a7a3ec5bf861d6bd874b957b75a3909f2b438c7588",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:8"
+    },
+    {
+      "file": "task1_train_07.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 135,
+      "record_sha256": "fb74e2ecf1aeb8d7b68c42864c7c8f8b120b381f11d44af873b92f9d6dda31be",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:9"
+    },
+    {
+      "file": "task2_validation_10.npz",
+      "split": "validation",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 123,
+      "record_sha256": "a18699a859bd7ee79287faa92061ab7eca405cbf671b51f86e6e65e007d73e4c",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:11"
+    },
+    {
+      "file": "task1_train_08.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 120,
+      "record_sha256": "579976be5ec567020e65a996f369a7632a950458273bf862f2089dc3f9ce781c",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:13"
+    },
+    {
+      "file": "task1_train_09.npz",
+      "split": "train",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 125,
+      "record_sha256": "f2b61d0f3fdc2450eedc58d05711355facd58f89d0a67d74cf9be525c68ad1bc",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:14"
+    },
+    {
+      "file": "task1_validation_10.npz",
+      "split": "validation",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 120,
+      "record_sha256": "9b67c78bb8b664d15d9c4e43b1292f0d4586accf8d3901b256890d38190c88ed",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:16"
+    },
+    {
+      "file": "task1_validation_11.npz",
+      "split": "validation",
+      "task_id": 1,
+      "instruction": "pick up the black bowl next to the ramekin and place it on the plate",
+      "steps": 131,
+      "record_sha256": "80a797512545eb08d1d2c5d6696f7bdf35fc2e3fb0a2c5bfe297b6904ee76973",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:21"
+    },
+    {
+      "file": "task2_validation_11.npz",
+      "split": "validation",
+      "task_id": 2,
+      "instruction": "pick up the black bowl from table center and place it on the plate",
+      "steps": 110,
+      "record_sha256": "682d6d12bf812e45dcbf656259af042dd2a12ad986287ab502f1f919e42aafac",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:22"
+    },
+    {
+      "file": "task0_train_08.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 105,
+      "record_sha256": "ac9ba2085b77fc74eb92f6f20448bddf6791a8e0d1318a933958635d88082cce",
+      "source_record": "libero_spatial-train.tfrecord-00003-of-00016:26"
+    },
+    {
+      "file": "task0_train_09.npz",
+      "split": "train",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 124,
+      "record_sha256": "ffecdc82c3bdf4e3231e4d80773d514c6872931928f880430cf56a76f947894c",
+      "source_record": "libero_spatial-train.tfrecord-00004-of-00016:2"
+    },
+    {
+      "file": "task0_validation_10.npz",
+      "split": "validation",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 168,
+      "record_sha256": "046f864859938594fd054d25025a6756e2dbc278f98ff99cd0d88be8adc9305a",
+      "source_record": "libero_spatial-train.tfrecord-00004-of-00016:5"
+    },
+    {
+      "file": "task0_validation_11.npz",
+      "split": "validation",
+      "task_id": 0,
+      "instruction": "pick up the black bowl between the plate and the ramekin and place it on the plate",
+      "steps": 151,
+      "record_sha256": "dc8d2d67ceea24815f1df926e0ff1e932a7dd294edba2ed14fc01aee62ab0d74",
+      "source_record": "libero_spatial-train.tfrecord-00004-of-00016:18"
+    }
+  ],
+  "source": {
+    "repo": "openvla/modified_libero_rlds",
+    "revision": "6ce6aaaaabdbe590b1eef5cd29c0d33f14a08551",
+    "shards": [
+      {
+        "type": "file",
+        "oid": "620519c7bf5e0e21888f3d8d54ad498c039db35c",
+        "size": 118202941,
+        "lfs": {
+          "oid": "6d6360559a4b71df3bcabd9b55a75451f04375449ca5267616cbc1c21528eac5",
+          "size": 118202941,
+          "pointerSize": 134
+        },
+        "xetHash": "4d0782d19f05579143fc8845093c654f7b985556ad7a0609a2011258b047b5c2",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00000-of-00016"
+      },
+      {
+        "type": "file",
+        "oid": "837b254895b0999e545167ae0241a69bd6e43890",
+        "size": 117638784,
+        "lfs": {
+          "oid": "9b0c706e9796304dbc40be5f0ccf6a407a471cd3aecbecfc3baab2af26a2a631",
+          "size": 117638784,
+          "pointerSize": 134
+        },
+        "xetHash": "ef8139b57e0dcaf67872264f5ce5e7b110a8e9c18321497d36d3ebf61cd3a085",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00001-of-00016"
+      },
+      {
+        "type": "file",
+        "oid": "02ae5dc3d0a21c429217604c055a23157fac67c6",
+        "size": 124105247,
+        "lfs": {
+          "oid": "e2be727ff29840040cecbce68ee17d7118129cc64d58c2a60ea38967a7482456",
+          "size": 124105247,
+          "pointerSize": 134
+        },
+        "xetHash": "90db9bf6dc6177ffc0f38b199ef3a82356f24e757ba6eb8ca572f911fca85b26",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00002-of-00016"
+      },
+      {
+        "type": "file",
+        "oid": "dbd4ab8dfe5a0f27e205304c593f25d9fcec174e",
+        "size": 114001484,
+        "lfs": {
+          "oid": "ca5c55cef57390f3e3c8a4ef0cbfe8b155b9f7e5a8b37c993f676faecbe25a3a",
+          "size": 114001484,
+          "pointerSize": 134
+        },
+        "xetHash": "2a55a3a0f1d5709875839bf2de2c2140f2f6ce3c2ff51d52b6d5ec53ed6d2391",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00003-of-00016"
+      },
+      {
+        "type": "file",
+        "oid": "0933aef4deb4b241a8030326ed81316bd2948771",
+        "size": 123511634,
+        "lfs": {
+          "oid": "c29887f8cee8d761439ec865884b8ba1877a3c3d2d886f1f0e802b93b863f268",
+          "size": 123511634,
+          "pointerSize": 134
+        },
+        "xetHash": "7d6d425e8198f9b6d910b7c3d3e3fd9f8aebab2394d6e06a86b4c81635bf77bd",
+        "path": "libero_spatial_no_noops/1.0.0/libero_spatial-train.tfrecord-00004-of-00016"
+      }
+    ]
+  },
+  "validation_scope": "Held out from this update only; official base already saw LIBERO-Spatial."
+}

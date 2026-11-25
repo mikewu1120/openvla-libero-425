@@ -8,11 +8,11 @@ Local reproduction, QLoRA fine-tuning, and language-paraphrase robustness evalua
 
 ## Presentation, Report & Interactive Results
 
-- **Online Slide Deck (GitHub Pages):** https://mikewu1120.github.io/openvla-libero-425/presentation.html
-- **Interactive Results & Rollout Videos (GitHub Pages):** https://mikewu1120.github.io/openvla-libero-425/
+- **Online Slide Deck (GitHub Pages):** https://mikewu1120.github.io/openvla-libero-425/final_project/presentation.html
+- **Interactive Results & Rollout Videos (GitHub Pages):** https://mikewu1120.github.io/openvla-libero-425/final_project/index.html
 - **View Slides PDF in GitHub:** [OpenVLA_Slides.pdf](final_project/OpenVLA_Slides.pdf) · **Download PPTX:** [OpenVLA_Final.pptx](final_project/OpenVLA_Final.pptx) · **Report PDF:** [OpenVLA_Report.pdf](final_project/OpenVLA_Report.pdf)
 
-[![OpenVLA Final Presentation Slide 1](final_project/slides/slide-01.png)](https://mikewu1120.github.io/openvla-libero-425/presentation.html)
+[![OpenVLA Final Presentation Slide 1](final_project/slides/slide-01.png)](https://mikewu1120.github.io/openvla-libero-425/final_project/presentation.html)
 
 ---
 
